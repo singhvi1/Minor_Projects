@@ -18,7 +18,7 @@ const DisplayGallery = () => {
     <>
       {image && (
         <div className="BgDiv fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-10" onClick={() => setImage(null)}>
-          <div className="PopUpdiv relative  w-[100vw] h-[95vh] flex justify-center items-center rounded  overflow-hidden" onClick={(e) => e.stopPropagation()}>
+          <div className="PopUpdiv relative  w-[50vw] h-[95vh] flex justify-center items-center rounded  overflow-hidden" onClick={(e) => e.stopPropagation()}>
             <img
               src={image}
               alt="#"
