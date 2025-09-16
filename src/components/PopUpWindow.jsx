@@ -13,7 +13,7 @@ const PopUpWindow = () => {
   };
   return (
     <div className="flex flex-col items-center bg-green-300 w-full h-[100vh] ">
-      <h1 className="text-lg font-black ">
+      <h1 className="text-lg font-black my-10 p-10 ">
         this is window for testing popUp feature
       </h1>
       <button className="bg-black text-white rounded" onClick={handleClick}>

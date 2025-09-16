@@ -7,6 +7,11 @@ Ah! Got it — you want a **personal revision note** for yourself, not a formal 
     tailwind.config.js
     update vite plugin with tailwindcss()
     update .css either app.css or index.css
+
+
+# setting up redux 
+  -npm install @reduxjs/toolkit react-redux
+
 # PopUpWindow Component — Revision Notes
 
 ### **Purpose**
@@ -155,4 +160,6 @@ Here’s a clear breakdown of the **problems you might face** while positioning 
 * Center the popup with `flex items-center justify-center` for consistency.
 
 ---
+
+
 
