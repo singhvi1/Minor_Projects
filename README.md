@@ -11,6 +11,12 @@ Ah! Got it — you want a **personal revision note** for yourself, not a formal 
 
 # setting up redux 
   -npm install @reduxjs/toolkit react-redux
+  -setUp appStor.js and then create slices
+# Routes 
+  -npm install react-router-dom;
+  -setUp main app.jsx ;
+
+
 
 # PopUpWindow Component — Revision Notes
 

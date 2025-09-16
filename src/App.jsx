@@ -1,14 +1,10 @@
 import './App.css'
-// import PopUpWindow from './components/PopUpWindow'
-import DisplayGallery from './components/DisplayGallery'
-import UnsplashGallery from './utils/UnsplashGallery'
+import Body from './components/Body'
 function App() {
 
   return (
     <>
-    {/* <PopUpWindow/> */}
-    <UnsplashGallery/>
-    <DisplayGallery/>
+    <Body/>
     </>
   )
 }

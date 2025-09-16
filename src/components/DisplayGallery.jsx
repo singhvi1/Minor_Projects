@@ -1,16 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
+import UnsplashGallery from "../utils/UnsplashGallery";
 
 const DisplayGallery = () => {
   const images = useSelector((state) => state.images.images);
   const [image, setImage] = useState(null);
-  console.log(image);
-
+  // console.log(image);
+  UnsplashGallery()
+ useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") setImage(null);
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
   return (
     <>
       {image && (
-        <div className="BgDiv fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-10">
-          <div className="PopUpdiv relative  w-[100vw] h-[95vh] flex justify-center items-center rounded  overflow-hidden">
+        <div className="BgDiv fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-10" onClick={() => setImage(null)}>
+          <div className="PopUpdiv relative  w-[100vw] h-[95vh] flex justify-center items-center rounded  overflow-hidden" onClick={(e) => e.stopPropagation()}>
             <img
               src={image}
               alt="#"
@@ -28,7 +36,7 @@ const DisplayGallery = () => {
       <div className="m-2 p-2">
         <div className="">
           <h1 className="text-2xl font-bold flex items-center justify-center">
-            PhotoWall
+            📸 PhotoWall
           </h1>
         </div>
         <div className="grid grid-cols-3 gap-4 p-5">
