@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Main from "./Main";
 import PopUpWindow from "./PopUpWindow"
 import DisplayGallery from "./DisplayGallery"
+import Timer from "./Timer";
 const Body = () => {
 const appRouter = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ const appRouter = createBrowserRouter([
     {
       path: "/gallery",
       element: <DisplayGallery />,
+    },
+    {
+      path: "/timer",
+      element: <Timer />,
     },
   ]);
   return <RouterProvider router={appRouter} />;

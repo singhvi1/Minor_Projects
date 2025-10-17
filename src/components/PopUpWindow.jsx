@@ -32,7 +32,7 @@ const PopUpWindow = () => {
               videos inside this popup.
             </p>
 
-            {/* Close Button */}
+            {/* Clofe Button */}
             <button
               className="absolute top-4 right-4 bg-red-500 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-red-600 transition-colors font-bold"
               onClick={handleCloseDiv}

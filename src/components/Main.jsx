@@ -6,7 +6,6 @@ const Main = () => {
       <h1 className="text-4xl font-extrabold mb-10 tracking-wide">
         🚀 Minor Project Dashboard
       </h1>
-
       <div className="flex gap-6">
         <NavLink
           to="/popUp"
@@ -35,10 +34,22 @@ const Main = () => {
         >
           GalleryPopUp
         </NavLink>
+
+        <NavLink
+          to={"/timer"}
+          className={({ isActive }) =>
+            `px-6 py-3  rounded-2xl font-semibold ${
+              isActive
+                ? "bg-green-700"
+                : "bg-gray-700 text-gray-200 hover:bg-green-500 hover:text-white"
+            }`
+          }
+        >
+          Timer 1.0
+        </NavLink>
       </div>
     </div>
   );
 };
 
 export default Main;
-  
